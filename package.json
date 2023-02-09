@@ -9,6 +9,14 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "morgan": "~1.9.1"
+    "http": "^0.0.1-security",
+    "intl-tel-input": "^17.0.19",
+    "morgan": "~1.9.1",
+    "pipedrive": "^18.0.3",
+    "unpipe": "^1.0.0",
+    "utils-merge": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

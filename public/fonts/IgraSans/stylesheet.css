@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Igra Sans';
+    src: url('IgraSans.eot');
+    src: local('Igra Sans'), local('IgraSans'),
+        url('IgraSans.eot?#iefix') format('embedded-opentype'),
+        url('IgraSans.woff') format('woff'),
+        url('IgraSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
