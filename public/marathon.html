@@ -452,15 +452,16 @@
             <div class="container">
                 <div class="register-block-container">
                     <div class="register-box">
-                        <form name="google-sheet">
+                        <!--name="google-sheet"-->
                             <span class="register-title">
                                 Отримайте доступ<br />
                                 до міні-курсу
                             </span>
                             <span class="register-note">Введіть свої дані для реєстрації</span>
-                            <div class="input-container"><label for="name">Ваше ім'я</label><input placeholder="Ваше ім'я" type="text" id="name" name="name" required minlength="3" /></div>
-                            <div class="input-container"><label for="email">E-mail</label><input placeholder="Email" type="email" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required /></div>
-                            <div class="input-container"><label for="phone">Телефон</label><input id="phone" type="tel" id="phone" name="phone" pattern="[0-9+]+" minlength="10" required /></div>
+                        <form name="marathoneForm">
+                            <div class="input-container"><label for="name">Ваше ім'я</label><input placeholder="Ваше ім'я" type="text" name="fullname" required minlength="3" /></div>
+                            <div class="input-container"><label for="email">E-mail</label><input placeholder="Email" type="email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required /></div>
+                            <div class="input-container"><label for="phone">Телефон</label><input id="phone" type="tel" name="phone" pattern="[0-9+]+" minlength="9" required /></div>
                             <button type="submit" href="https://telegram.me/Creo_FreeCourse_bot?start=639b0cb6c2bfd3604f24328a" class="orange-button">Зареєструватися</button>
                         </form>
                     </div>
@@ -560,15 +561,16 @@
         </footer>
         <script src="/js/main3.js"></script>
         <script src="./js/intlTelInput.min.js"></script>
-        <script>
+        <script src="./js/utils.js"></script>
+        <!-- <script>
             const scriptURL = "https://script.google.com/macros/s/AKfycbw1HKvit3mt37jWkQgsz1C3W9Wf6VULdYa4G66FBjmHWSSbvvtISEz90WB6hziTOLGqgg/exec";
-            const form = document.forms["google-sheet"];
+            const form = document.forms['marathoneForm'];
             form.addEventListener("submit", (e) => {
                 e.preventDefault();
                 fetch(scriptURL, { method: "POST", body: new FormData(form) })
                     .then((response) => (window.location = "https://telegram.me/Creo_FreeCourse_bot?start=639b0cb6c2bfd3604f24328a"))
                     .catch((error) => console.error("Error!", error.message));
             });
-        </script>
+        </script> -->
     </body>
 </html>
